@@ -14,7 +14,7 @@
 |-------------|-----|
 | 🚀 **Live Production URL** | **[https://ajaia-yahya.vercel.app](https://ajaia-yahya.vercel.app)** |
 | 📦 **GitHub Repository** | **[https://github.com/mdyahhya/assessment](https://github.com/mdyahhya/assessment)** |
-| 🎥 **Walkthrough Video** | **[https://youtu.be/submission_demo](https://youtu.be/submission_demo)** *(Replace with your video link)* |
+| 🎥 **Walkthrough Video** | **[Google Drive Video Link](https://drive.google.com/file/d/1cJKx2Yr4YJ2FDXkA9vFp2lHV-L8id52j/view?usp=sharing)** |
 | 📁 **Google Drive Folder** | *(Paste your Google Drive link here)* |
 
 ---

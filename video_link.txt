@@ -1,4 +1,4 @@
-Video walkthrough link: [PASTE YOUR LOOM OR YOUTUBE LINK HERE]
+Video walkthrough link: https://drive.google.com/file/d/1cJKx2Yr4YJ2FDXkA9vFp2lHV-L8id52j/view?usp=sharing
 
 The video covers:
 1. Main user flow (login → create doc → edit → save → reopen)
