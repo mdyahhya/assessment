@@ -6,34 +6,28 @@
 
 ---
 
+## 🌐 Project Links
+
+- 🚀 **Live Demo (Vercel)**: **[https://ajaia-yahya.vercel.app](https://ajaia-yahya.vercel.app)**
+- 📦 **GitHub Repository**: **[https://github.com/mdyahhya/assessment](https://github.com/mdyahhya/assessment)**
+
+---
+
 ## Deliverables Included
 
 | Path | Description |
 |------|-------------|
-| `web_code/index.html` | Application HTML structure & UI components |
-| `web_code/styles.css` | Premium Light Theme CSS design system |
-| `web_code/app.js` | Complete state management, editor engine & exports |
-| `web_code/database/setup.sql` | Clean, human-readable SQL setup & initial data seed |
-| `web_code/samples/` | Sample `.md` and `.txt` files for instant file import testing |
+| `index.html` | Main HTML application structure & UI components |
+| `about.html` | Comprehensive project specs, architecture & requirements fulfillment page |
+| `styles.css` | Premium Light Theme CSS design system |
+| `app.js` | Complete state management, editor engine & exports |
+| `database/setup.sql` | Clean, human-readable SQL setup & initial data seed |
+| `sample_files/` | Sample `.md` and `.txt` files for instant file import testing |
 | `README.md` | Launch & usage instructions |
 | `ARCHITECTURE.md` | System design & architectural decisions |
 | `AI_WORKFLOW.md` | AI usage breakdown & verification steps |
 | `SUBMISSION.md` | Submission checklist & feature status |
 | `video_link.txt` | Walkthrough video link placeholder |
-
----
-
-## ⚡ How to Run
-
-### Option 1: Open Directly in Browser (0 Setup Required)
-Double-click `web_code/index.html` in your file manager or open it in Chrome/Edge!
-
-### Option 2: Local HTTP Server
-```bash
-cd "Assessment Submission\web_code"
-npx serve .
-```
-Or open [http://localhost:5174](http://localhost:5174) in your browser.
 
 ---
 
@@ -48,22 +42,18 @@ Or open [http://localhost:5174](http://localhost:5174) in your browser.
 
 ---
 
-## Working Feature Checklist
+## Feature Fulfillment Checklist
 
-- [x] User sign-in & session persistence
-- [x] Quick test account auto-fill & login
-- [x] Dashboard with "My Documents" and "Shared with Me" tabs
-- [x] Refresh button with animated icon
-- [x] Create new documents
-- [x] Inline title renaming
-- [x] Rich text formatting (Bold, Italic, Underline, Strikethrough, H1–H3, Lists, Quotes)
-- [x] Auto-save status indicator ("Saved", "Unsaved...")
-- [x] Word count footer
-- [x] File import (`.txt` and `.md` drag-and-drop / file picker)
-- [x] Sharing with Viewer (read-only) and Editor (can edit) roles
-- [x] Role enforcement badge & read-only guard
-- [x] Version history snapshots & 1-click restore
-- [x] One-click PDF export (`html2pdf.js`)
-- [x] One-click Markdown export (`.md` download)
-- [x] Developer info modal
-- [x] Crisp light theme UI with Lucide SVG icons
+### Core Requirements
+- [x] User Authentication & Session Persistence
+- [x] Document Dashboard ("My Documents" vs "Shared with Me")
+- [x] Rich Text Editor (Headings H1-H3, Bold, Italic, Underline, Strikethrough, Lists, Quotes)
+- [x] Document Auto-Save & Manual Save
+- [x] File Import (`.txt` & `.md` drag-and-drop / file picker)
+
+### Optional & Stretch Requirements
+- [x] Role-Based Sharing (Viewer vs Editor permissions)
+- [x] Version History Snapshots & 1-Click Restoration
+- [x] One-Click PDF Export (`html2pdf.js`)
+- [x] One-Click Markdown Export (`.md` Blob download)
+- [x] Responsive Light Theme UI with SVG vector iconography
