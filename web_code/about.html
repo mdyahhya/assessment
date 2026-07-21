@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Project — AjaiaDoc</title>
+  <meta name="description" content="Detailed technical overview, architecture flow, tech stack, and database specifications for AjaiaDoc.">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .about-container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    .about-hero {
+      text-align: center;
+      padding: 48px 24px;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-md);
+      margin-bottom: 40px;
+    }
+
+    .about-hero h1 {
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: -0.8px;
+      margin-bottom: 12px;
+      color: var(--color-text);
+    }
+
+    .about-hero p {
+      font-size: 15px;
+      color: var(--color-text-secondary);
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .section-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      margin-bottom: 28px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .section-icon {
+      width: 36px;
+      height: 36px;
+      background: var(--color-accent);
+      color: var(--color-accent-text);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .section-title {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      color: var(--color-text);
+    }
+
+    .bullet-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+    }
+
+    .bullet-item {
+      padding: 16px;
+      background: var(--color-bg);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      display: flex;
+      gap: 12px;
+    }
+
+    .bullet-icon {
+      color: var(--color-accent);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .bullet-title {
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 4px;
+      color: var(--color-text);
+    }
+
+    .bullet-text {
+      font-size: 12px;
+      color: var(--color-text-secondary);
+      line-height: 1.5;
+    }
+
+    .tech-pill-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .tech-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      background: var(--color-bg);
+      border: 1px solid var(--color-border-dark);
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--color-text);
+    }
+
+    .flow-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .flow-step {
+      display: flex;
+      gap: 16px;
+      padding: 16px;
+      background: var(--color-bg);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      align-items: flex-start;
+    }
+
+    .step-number {
+      width: 28px;
+      height: 28px;
+      background: var(--color-accent);
+      color: var(--color-accent-text);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="app-header">
+    <a href="index.html" class="brand">
+      <div class="brand-icon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+      </div>
+      <span>AjaiaDoc</span>
+    </a>
+
+    <div class="header-user">
+      <a href="index.html" class="btn btn-primary btn-sm">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        Back to App
+      </a>
+    </div>
+  </header>
+
+  <main class="about-container">
+
+    <!-- Hero -->
+    <div class="about-hero">
+      <h1>Project Specifications & Architecture</h1>
+      <p>A comprehensive technical breakdown of AjaiaDoc — covering system flow, tech stack, database methods, and complete feature specifications.</p>
+    </div>
+
+    <!-- Section 1: Application Flow -->
+    <div class="section-card">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div class="section-title">1. Application Flow & Architecture</div>
+      </div>
+
+      <div class="flow-steps">
+        <div class="flow-step">
+          <div class="step-number">1</div>
+          <div>
+            <div class="bullet-title">Authentication & Quick Test Sign-In</div>
+            <div class="bullet-text">Users log in using password auth or select 1-click test accounts (<code>user1@test.com</code> as Owner or <code>user2@test.com</code> as Collaborator). Session state persists across refreshes.</div>
+          </div>
+        </div>
+
+        <div class="flow-step">
+          <div class="step-number">2</div>
+          <div>
+            <div class="bullet-title">Dashboard & Permission Filtering</div>
+            <div class="bullet-text">Documents are dynamically rendered under two tabs: "My Documents" (owned) and "Shared with Me" (shared by email). Roles (Owner, Editor, Viewer) are computed and badge-encoded on card render.</div>
+          </div>
+        </div>
+
+        <div class="flow-step">
+          <div class="step-number">3</div>
+          <div>
+            <div class="bullet-title">Rich Text Canvas & Debounced Auto-Save</div>
+            <div class="bullet-text">Opening a document loads the HTML content into an editable canvas. Input events trigger an active status badge ("Unsaved...") and debounce an auto-save operation after 1.5s of inactivity.</div>
+          </div>
+        </div>
+
+        <div class="flow-step">
+          <div class="step-number">4</div>
+          <div>
+            <div class="bullet-title">Version History Snapshotting</div>
+            <div class="bullet-text">Clicking <b>Save</b> manually records an immutable snapshot with timestamp and title in the version history drawer. Any version can be restored in 1-click.</div>
+          </div>
+        </div>
+
+        <div class="flow-step">
+          <div class="step-number">5</div>
+          <div>
+            <div class="bullet-title">Multi-Format Document Exporting</div>
+            <div class="bullet-text">Documents are exported client-side to styled A4 PDF documents via <code>html2pdf.js</code> or clean Markdown files (<code>.md</code>) via Blob downloads.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 2: Tech Stack & Libraries -->
+    <div class="section-card">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+        </div>
+        <div class="section-title">2. Tech Stack & Libraries Used</div>
+      </div>
+
+      <div class="tech-pill-container">
+        <span class="tech-pill">HTML5 Engine</span>
+        <span class="tech-pill">Vanilla CSS3 Design Tokens</span>
+        <span class="tech-pill">Vanilla JavaScript (ES6+)</span>
+        <span class="tech-pill">Lucide SVG Vector Icons</span>
+        <span class="tech-pill">html2pdf.js CDN</span>
+        <span class="tech-pill">jsPDF Library</span>
+        <span class="tech-pill">PostgreSQL Engine</span>
+        <span class="tech-pill">Supabase Backend API</span>
+        <span class="tech-pill">FileReader API</span>
+        <span class="tech-pill">LocalStorage Engine</span>
+      </div>
+    </div>
+
+    <!-- Section 3: Database & SQL Methods -->
+    <div class="section-card">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+        </div>
+        <div class="section-title">3. Database Schema & RLS Policies</div>
+      </div>
+
+      <div class="bullet-grid">
+        <div class="bullet-item">
+          <div class="bullet-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <div>
+            <div class="bullet-title">PostgreSQL Relations</div>
+            <div class="bullet-text">Three primary tables: <code>documents</code>, <code>document_shares</code>, and <code>document_versions</code> with UUID keys and cascading deletes.</div>
+          </div>
+        </div>
+
+        <div class="bullet-item">
+          <div class="bullet-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <div class="bullet-title">JWT-Based RLS Policies</div>
+            <div class="bullet-text">Uses <code>auth.jwt() -&gt;&gt; 'email'</code> for shared document queries to prevent infinite policy recursion and guarantee instant response times.</div>
+          </div>
+        </div>
+
+        <div class="bullet-item">
+          <div class="bullet-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+          </div>
+          <div>
+            <div class="bullet-title">Pre-Seeded Test Accounts</div>
+            <div class="bullet-text">Seeds <code>user1@test.com</code> and <code>user2@test.com</code> directly into <code>auth.users</code> and <code>auth.identities</code> for instant reviewer testing.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 4: Feature Specifications -->
+    <div class="section-card">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        </div>
+        <div class="section-title">4. Feature Specifications</div>
+      </div>
+
+      <div class="bullet-grid">
+        <div class="bullet-item">
+          <div class="bullet-icon">✓</div>
+          <div>
+            <div class="bullet-title">Rich Text Formatting</div>
+            <div class="bullet-text">Headings H1-H3, Bold, Italic, Underline, Strikethrough, Bullet & Numbered lists, Quotes, and Clear Formatting.</div>
+          </div>
+        </div>
+
+        <div class="bullet-item">
+          <div class="bullet-icon">✓</div>
+          <div>
+            <div class="bullet-title">File Import (.txt and .md)</div>
+            <div class="bullet-text">Drag-and-drop or browse files. Automatically parses markdown headers and text paragraphs into rich text DOM nodes.</div>
+          </div>
+        </div>
+
+        <div class="bullet-item">
+          <div class="bullet-icon">✓</div>
+          <div>
+            <div class="bullet-title">Role-Based Sharing</div>
+            <div class="bullet-text">Grant collaborator permissions by email with <b>Viewer</b> (read-only) or <b>Editor</b> (can edit) access controls.</div>
+          </div>
+        </div>
+
+        <div class="bullet-item">
+          <div class="bullet-icon">✓</div>
+          <div>
+            <div class="bullet-title">Version History Drawers</div>
+            <div class="bullet-text">Creates timestamped version snapshots on manual save with 1-click instant content restoration.</div>
+          </div>
+        </div>
+
+        <div class="bullet-item">
+          <div class="bullet-icon">✓</div>
+          <div>
+            <div class="bullet-title">PDF & Markdown Export</div>
+            <div class="bullet-text">Generate styled A4 PDF documents or download clean <code>.md</code> files directly from the topbar.</div>
+          </div>
+        </div>
+
+        <div class="bullet-item">
+          <div class="bullet-icon">✓</div>
+          <div>
+            <div class="bullet-title">Responsive Light Theme</div>
+            <div class="bullet-text">Minimalist white and slate design system with dynamic glassmorphism and Lucide SVG vector iconography.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+</body>
+</html>
