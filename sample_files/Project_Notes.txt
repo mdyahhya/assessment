@@ -1,0 +1,7 @@
+Project Meeting Notes
+Date: 2026-07-22
+
+1. Review initial collaborative editor scaffold.
+2. Verify Supabase Auth, Row-Level Security, and Storage policies.
+3. Test file import (.txt/.md) and PDF export.
+4. Record walkthrough video for submission.

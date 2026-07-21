@@ -1,0 +1,7 @@
+Project Sprint Tasks
+
+1. Test Rich Text toolbar formatting options.
+2. Import Sample_Document.md into editor.
+3. Share document with collaborator (user2@test.com).
+4. Save a version snapshot and restore.
+5. Export document as PDF and Markdown.
